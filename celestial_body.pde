@@ -31,6 +31,7 @@ Celestial mars = new Celestial(500,400,10,0);
 Celestial jupiter = new Celestial(500,400,60, 0);
 Celestial io = new Celestial(500,400,10,0);
 Celestial europa = new Celestial(500,400, 5, 0);
+Celestial ganymede = new Celestial (500,400,12,0);
 
 void setup(){
  size(1000,800); 
@@ -56,4 +57,6 @@ void draw(){
  io.display(247,241,49);
  europa.orbit(jupiter, 35, day*3.5);
  europa.display(249,248,230);
+ ganymede.orbit(jupiter, 55, day*7);
+ ganymede.display(121,121,113);
 }
